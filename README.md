@@ -22,7 +22,7 @@ Une application Streamlit complète pour :
 
 1. Cloner le dépôt
 ```bash
-    git clone <https://github.com/spearhead4/coworking_map>
+git clone <https://github.com/spearhead4/coworking_map>
 ```
 2. Créer un environnement virtuel
 Sous macOS / Linux :
