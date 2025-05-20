@@ -25,28 +25,28 @@ Une application Streamlit complète pour :
 ```bash
 git clone <url-du-repo>
 cd <nom-du-dossier>
-
+```
 2. Créer un environnement virtuel
 Sous macOS / Linux :
 
 Toujours afficher les détails
-
+```bash
 python3 -m venv env
 source env/bin/activate
-
+```
 Sous Windows :
 
 Toujours afficher les détails
-
+```bash
 python -m venv env
 env\\Scripts\\activate
-
+```
 3. Installer les dépendances
 
 Toujours afficher les détails
-
+```bash
 pip install -r requirements.txt
-
+```
 📦 requirements.txt
 
 Toujours afficher les détails
@@ -62,9 +62,9 @@ streamlit-folium>=0.14
 ▶️ Lancer l'application
 
 Toujours afficher les détails
-
+```bash
 streamlit run app.py
-
+```
 🧭 Interface utilisateur
 🔍 Lancer le scraping
 
