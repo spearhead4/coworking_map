@@ -1,0 +1,8 @@
+# This file is used to install the required packages for the project.
+streamlit>=1.34
+pandas>=2.2
+requests>=2.31
+beautifulsoup4>=4.12
+geopy>=2.4
+folium>=0.15
+streamlit-folium>=0.14
