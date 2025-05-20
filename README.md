@@ -21,27 +21,21 @@ Une application Streamlit complète pour :
 ⚙️ Installation locale
 
 1. Cloner le dépôt
-
+```bash
     git clone <https://github.com/spearhead4/coworking_map>
-
+```
 2. Créer un environnement virtuel
 Sous macOS / Linux :
-
-Toujours afficher les détails
 
     python3 -m venv env
     source env/bin/activate
 
 Sous Windows :
 
-Toujours afficher les détails
-
     python -m venv env
     env\\Scripts\\activate
 
 3. Installer les dépendances
-
-Toujours afficher les détails
 
     pip install -r requirements.txt
 
