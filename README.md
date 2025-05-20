@@ -22,8 +22,7 @@ Une application Streamlit complète pour :
 
 1. Cloner le dépôt
 
-    git clone [<url-du-repo>](https://github.com/spearhead4/coworking_map)
-    cd <nom-du-dossier>
+    git clone <https://github.com/spearhead4/coworking_map>
 
 2. Créer un environnement virtuel
 Sous macOS / Linux :
