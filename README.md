@@ -18,102 +18,89 @@ Une application Streamlit complète pour :
 
 ---
 
-## ⚙️ Installation locale
+⚙️ Installation locale
 
-### 1. Cloner le dépôt
+1. Cloner le dépôt
 
-```bash
-git clone <url-du-repo>
-cd <nom-du-dossier>
-```
+    git clone <url-du-repo>
+    cd <nom-du-dossier>
+
 2. Créer un environnement virtuel
 Sous macOS / Linux :
 
 Toujours afficher les détails
-```bash
-python3 -m venv env
-source env/bin/activate
-```
+
+    python3 -m venv env
+    source env/bin/activate
+
 Sous Windows :
 
 Toujours afficher les détails
-```bash
-python -m venv env
-env\\Scripts\\activate
-```
+
+    python -m venv env
+    env\\Scripts\\activate
+
 3. Installer les dépendances
 
 Toujours afficher les détails
-```bash
-pip install -r requirements.txt
-```
+
+    pip install -r requirements.txt
+
 📦 requirements.txt
 
-Toujours afficher les détails
-
-streamlit>=1.34
-pandas>=2.2
-requests>=2.31
-beautifulsoup4>=4.12
-geopy>=2.4
-folium>=0.15
-streamlit-folium>=0.14
+    streamlit>=1.34
+    pandas>=2.2
+    requests>=2.31
+    beautifulsoup4>=4.12
+    geopy>=2.4
+    folium>=0.15
+    streamlit-folium>=0.14
 
 ▶️ Lancer l'application
 
-Toujours afficher les détails
-```bash
-streamlit run app.py
-```
-🧭 Interface utilisateur
+    streamlit run app.py
+
 🔍 Lancer le scraping
 
-    Récupère les liens de pages coworking, puis extrait les infos détaillées de chaque fiche.
+Récupère les liens de pages coworking, puis extrait les infos détaillées de chaque fiche.
 
 🧹 Nettoyer les données
 
-    Nettoie les accents mal encodés
+Nettoie les accents mal encodés
 
-    Supprime les lignes où l’URL, le Nom ou l’Adresse sont manquants ou "indisponible"
+Supprime les lignes où l’URL, le Nom ou l’Adresse sont manquants ou "indisponible"
 
 📄 Voir les CSV
 
-    Affiche les fichiers CSV bruts et nettoyés.
+Affiche les fichiers CSV bruts et nettoyés.
 
 🔎 Rechercher un coworking
 
-    Permet de filtrer les résultats selon n’importe quel champ (Nom, Adresse, Téléphone, etc.)
+Permet de filtrer les résultats selon n’importe quel champ (Nom, Adresse, Téléphone, etc.)
 
 🔄 Rafraîchir la carte
 
-    Géocode les adresses manquantes avec Nominatim (1 requête/sec)
+Géocode les adresses manquantes avec Nominatim (1 requête/sec)
 
-    Ajoute les coordonnées GPS dans le fichier nettoyé
+Ajoute les coordonnées GPS dans le fichier nettoyé
 
 🗺️ Afficher la carte générale
 
-    Affiche tous les coworkings géolocalisés
+Affiche tous les coworkings géolocalisés
 
 📍 Afficher la recherche sur la carte
 
-    Affiche uniquement les résultats filtrés sur une carte Folium
+Affiche uniquement les résultats filtrés sur une carte Folium
 
 🛠 Remarques techniques
 
-    Le géocodage utilise OpenStreetMap (Nominatim), limité à 1 requête/seconde.
+Le géocodage utilise OpenStreetMap (Nominatim), limité à 1 requête/seconde.
 
-    Sur macOS, en cas d'erreur SSL :
+Sur macOS, en cas d'erreur SSL :
 
-Toujours afficher les détails
+    /Applications/Python\\ 3.x/Install\\ Certificates.command
 
-/Applications/Python\\ 3.x/Install\\ Certificates.command
-
-Ou bien :
-
-Toujours afficher les détails
-
-import os, certifi
-os.environ['SSL_CERT_FILE'] = certifi.where()
+Remplace 3.x par ta version exacte (par exemple 3.11 ou 3.10)
 
 📁 Fichiers générés
 
